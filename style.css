@@ -1,0 +1,179 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Great Vibes", cursive;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #0c0000;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cal {
+  position: absolute;
+}
+
+/*cal
+*/
+
+h1 {
+  margin: 0;
+  font-size: 85px;
+  line-height: 75px;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  padding: 60px;
+}
+
+ul {
+  margin: 0 auto 30px auto;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+li {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 400;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: inline-block;
+  color: #111;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 25px 12px;
+  width: 300px;
+  height: 220px;
+  text-align: center;
+  position: relative;
+  vertical-align: top;
+  user-select: none;
+  perspective: 800px;
+  transition: all 0.4s ease-in-out;
+}
+
+ul li:last-child {
+  background-size: cover;
+  display: block;
+  clear: both;
+  font-size: 15px;
+  margin: 20px auto 0 auto;
+  width: 300px;
+  height: 440px;
+}
+
+ul li:last-child .door {
+  font-size: 100px;
+  width: 300px;
+  height: 440px;
+}
+
+.door {
+  user-select: none;
+  color: #fff;
+  font-size: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#b22222, #8b0000);
+  box-sizing: border-box;
+  border-top: 2px #eee dashed;
+  border-right: 2px #eee dashed;
+  border-bottom: 2px #eee dashed;
+  border-left: 1px #eee solid;
+  border-radius: 6px;
+  padding: 15px;
+  width: 300px;
+  height: 220px;
+  transform-origin: 0 40%;
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.current .door {
+  background-color: #7ead44;
+}
+
+.current .door.open {
+  color: #7ead44;
+}
+
+.revealed {
+  user-select: none;
+}
+
+#message {
+  box-sizing: border-box;
+  color: #222;
+  display: none;
+  font-size: 24px;
+  padding: 20px;
+  background: #eddecb;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.open {
+  box-shadow: 14px 0px 15px -1px rgba(0, 0, 0, 0.2);
+  color: #91c1cc;
+  transform: rotate3d(0, 1, 0, -98deg);
+}
+
+.jiggle {
+  animation: jiggle 0.2s infinite;
+  transform: rotate(-1deg);
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  li {
+    margin: 25px 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-size: 150px;
+  }
+  p {
+    right: 6%;
+    top: 20%;
+    bottom: auto;
+    margin-left: auto;
+    left: auto;
+  }
+}
+
+.xmastree {
+  height: 70px;
+  width: auto;
+}
