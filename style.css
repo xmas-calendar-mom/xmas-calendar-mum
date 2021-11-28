@@ -78,13 +78,13 @@ ul li:last-child {
   font-size: 15px;
   margin: 20px auto 0 auto;
   width: 300px;
-  height: 440px;
+  height: 220px;
 }
 
 ul li:last-child .door {
   font-size: 100px;
   width: 300px;
-  height: 440px;
+  height: 220px;
 }
 
 .door {
